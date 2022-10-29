@@ -11,3 +11,31 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Card {
+  /* height: 100%;
+  width: 100%; */
+  height: 180px;
+  width: 120px;
+  border: 1px slategray;
+  background-color: aqua;
+  margin: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Container{
+  max-height: 60vh;
+  width: 60vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  overflow-y: scroll;
+  grid-template-columns: repeat(7,minmax(120px,auto));
+  grid-template-rows: repeat(2,minmax(180px,1fr)) ;
+  row-gap: 1px;
+  column-gap: 1px;
+}
+/* ::-webkit-scrollbar {
+  width: 0px; 
+}  */

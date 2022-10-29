@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import ImageContainer from './Components/ImageContainer'
+import Context from './Context';
+import React,{useContext, useEffect, useState} from 'react'
 
 function App() {
+  const [val,setVal] = useState(5);
+
+  const handleClick = (event) => {
+      // console.log("event:",event.target.value)
+      setVal(event.target.value)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Context>
+      <div className="App">
+        <div>
+          <span>No. of cards:</span>
+          <input type='number' value={val} onChange={handleClick}/>
+        </div>
+        <ImageContainer val ={val}/>
+      </div>
+    </Context>
   );
 }
 
