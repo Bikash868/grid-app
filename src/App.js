@@ -7,7 +7,6 @@ function App() {
   const [val,setVal] = useState(1);
 
   const handleClick = (event) => {
-      // console.log("event:",event.target.value)
       setVal(event.target.value)
   }
 

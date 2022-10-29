@@ -6,10 +6,12 @@ const ImageContainer = ({val}) => {
     useEffect(()=>{
         const arr = [ ];
         let len;
-        if(val<12) {
-            len = 12;
+        if(val<8) {
+            len = 8;
+        } else if(val<16){
+            len = 16; //12*8
         } else {
-            len = 97; //12*8
+            len = 25 //24+1 ->scroll ->infinite data
         }
 
         for (let i = 0; i < len; i++) {

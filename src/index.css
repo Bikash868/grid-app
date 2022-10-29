@@ -43,26 +43,33 @@ code {
 /*For Desktop*/
 @media screen and (min-width: 1024px) {
   .Container {
-    --num-cols: 12;
-    --num-rows: 8;
+    --num-cols: 8;
+    --num-rows: ;
   }
 }
  
 /* For Tablet View */
-@media screen and (min-device-width: 768px)
+@media screen and (min-device-width: 750px)
 and (max-device-width: 1024px) {
   .Container {
-    --num-cols: 8;
+    --num-cols: 6;
     --num-rows: 4;
   }
 }
- 
-/* For Mobile Portrait View */
-@media screen and (max-device-width: 480px)
+
+@media screen and (max-device-width: 749px)
+{
+  .Container {
+    --num-cols: 5;
+    --num-rows: 4;
+  }
+}
+
+@media screen and (max-device-width: 550px)
 and (orientation: portrait) {
   .Container {
-    --num-cols: 7;
-    --num-rows: 3;
+    --num-cols: 3;
+    --num-rows: 2;
   }
 }
 
