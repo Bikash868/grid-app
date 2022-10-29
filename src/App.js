@@ -1,10 +1,10 @@
 import './App.css';
 import ImageContainer from './Components/ImageContainer'
 import Context from './Context';
-import React,{useContext, useEffect, useState} from 'react'
+import React,{useState} from 'react'
 
 function App() {
-  const [val,setVal] = useState(5);
+  const [val,setVal] = useState(1);
 
   const handleClick = (event) => {
       // console.log("event:",event.target.value)

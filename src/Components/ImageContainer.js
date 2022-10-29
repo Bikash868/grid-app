@@ -6,13 +6,12 @@ const ImageContainer = ({val}) => {
     useEffect(()=>{
         const arr = [ ];
         let len;
-        if(val<7) {
-            len = 7;
-        } else if(val<14) {
-            len = 14;
+        if(val<12) {
+            len = 12;
         } else {
-            len = val;
+            len = 97; //12*8
         }
+
         for (let i = 0; i < len; i++) {
             arr.push(i+1);
         }
@@ -23,7 +22,7 @@ var isScrolling
 const generate = () =>{
     let y = x.length;
     let arr = [...x]
-    for(let i=1;i<=7;i++) {
+    for(let i=1;i<=12;i++) {
         arr.push(y+i);
     }
     setX(arr)
@@ -34,7 +33,7 @@ const handleScroll = (o) =>{
     isScrolling = setTimeout(function() {
         generate();
 
-    }, 66);
+    }, 10);
 }
 
   return (
