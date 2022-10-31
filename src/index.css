@@ -26,7 +26,7 @@ code {
   width: 60vw;
   border: 2px solid rebeccapurple;
   
-  --gap: 10px;
+  --gap: 5px;
   --num-cols: 12;
   --num-rows: 8;
   --row-height: 200px;
@@ -66,9 +66,9 @@ and (max-device-width: 1024px) {
 }
 
 @media screen and (max-device-width: 550px)
-and (orientation: portrait) {
+{
   .Container {
-    --num-cols: 3;
+    --num-cols: 2;
     --num-rows: 2;
   }
 }
