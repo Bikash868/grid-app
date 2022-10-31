@@ -11,6 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.inputBox {
+  display: flex;
+}
 .Card {
   height: 100%;
   width: 100%;
@@ -63,6 +66,9 @@ and (max-device-width: 1024px) {
     --num-cols: 5;
     --num-rows: 4;
   }
+  .inputBox {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-device-width: 550px)
@@ -70,6 +76,9 @@ and (max-device-width: 1024px) {
   .Container {
     --num-cols: 2;
     --num-rows: 2;
+  }
+  .inputBox {
+    flex-direction: column;
   }
 }
 

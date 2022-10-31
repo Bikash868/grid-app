@@ -13,7 +13,7 @@ function App() {
   return (
     <Context>
       <div className="App">
-        <div style={{display:'flex'}}>
+        <div className="inputBox">
           <span>No. of cards:</span>
           <input type='number' value={val} onChange={handleClick}/>
           <i>(Enter gt 15 to see infinite scroll)</i>
